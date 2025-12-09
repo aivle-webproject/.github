@@ -121,3 +121,122 @@ src/
 - OpenAI API 키가 없으면 도서 등록 화면의 AI 표지 생성 및 `src/api/openai.js` 호출이 실패합니다. `.env`가 제대로 로드되었는지 확인하세요.
 - 백엔드 API 주소가 변경될 경우, 관련 URL 문자열을 일괄 수정해야 합니다 (`BookGrid.jsx`, `BookRegister.jsx`, `BookDetail.jsx`, `Login.jsx`, `Signup.jsx`, `ProfilePage.jsx`).
 - 인증 상태는 로컬 스토리지 `authUser`에 저장되므로, 브라우저 스토리지를 지우면 자동으로 로그아웃됩니다.
+
+# 👥 Team Members & Roles
+
+## Backend Team
+
+### younghosck
+- **역할**: DevOps & Infrastructure Lead
+- **주요 기여**:
+  - 프로젝트 초기 설정 및 빌드 환경 구성
+  - CI/CD 파이프라인 구축 (Github Actions)
+  - 프로젝트 구조 및 인프라 설계
+  - 문서화 및 README 관리
+
+### malamd
+- **역할**: Authentication & User Management
+- **주요 기여**:
+  - 회원가입/로그인 로직 구현
+  - JWT 토큰 기반 인증 시스템 개발
+  - DTO 설계 및 Service 계층 리팩토링
+  - 사용자 인증/인가 보안 구현
+
+### sungwon0206
+- **역할**: Profile Management
+- **주요 기여**:
+  - 사용자 프로필 관리 기능 개발
+  - 닉네임/이메일 수정 API 구현
+  - Profile Controller 및 Service 구현
+
+### JongDuckk
+- **역할**: Database & Configuration
+- **주요 기여**:
+  - H2 데이터베이스 설정 및 관리
+  - 비밀번호 변경 기능 구현
+  - 프로젝트 문서화 및 README 업데이트
+
+### a53624926-droid
+- **역할**: Book Feature Development
+- **주요 기여**:
+  - 도서 관련 Controller 및 Service 구현
+  - BookDTO 설계 및 수정
+  - 도서 기능 비즈니스 로직 개발
+
+### JYS
+- **역할**: Domain Architecture
+- **주요 기여**:
+  - 도메인 폴더 구조 설계
+  - 도메인 클래스 및 엔티티 추가
+  - 도메인 계층 아키텍처 구축
+
+### jongmai
+- **역할**: External API Integration
+- **주요 기여**:
+  - OpenAI API 연동 구현
+  - 데이터베이스 종속성 관리
+  - 도메인 컨벤션 정립 및 수정
+
+---
+
+## Frontend Team
+
+### younghosck
+- **역할**: DevOps & Infrastructure Lead
+- **주요 기여**:
+  - Frontend 프로젝트 초기 설정
+  - CI/CD 파이프라인 구축
+  - TSX에서 JSX로 마이그레이션
+  - ESLint 설정 및 코드 품질 관리
+
+### 지예환
+- **역할**: UI Component Lead
+- **주요 기여**:
+  - Material-UI 적용 및 테마 설정
+  - Header, Sidebar, Home 컴포넌트 개발
+  - 로그인/회원가입 모달 구현
+  - 라우팅 시스템 구축
+
+### Chang-Daegyu
+- **역할**: Feature Implementation & UI
+- **주요 기여**:
+  - 로그인/회원가입 페이지 개발
+  - 메인 레이아웃 구성
+  - Authentication Context 구현
+  - 도서 카테고리 및 수정 모달 개발
+
+### Jeonyg
+- **역할**: UI/UX Designer & Developer
+- **주요 기여**:
+  - 전반적인 UI/UX 개선
+  - 프로필 페이지 구현
+  - 사용자 경험 최적화
+
+### a53624926-droid
+- **역할**: Service Integration
+- **주요 기여**:
+  - 백엔드 서비스 로직 통합
+  - 프로필 비밀번호 변경 기능 구현
+  - 계정 삭제 기능 개발
+
+### jongmai
+- **역할**: External API Integration
+- **주요 기여**:
+  - OpenAI API 클라이언트 연동
+  - AI 기능 프론트엔드 구현
+
+---
+
+## 📊 Contribution Summary
+
+| Member | Primary Role | Focus Area |
+|--------|-------------|-----------|
+| younghosck | DevOps & Infrastructure | CI/CD, 프로젝트 설정 |
+| malamd | Authentication | 인증/인가 시스템 |
+| sungwon0206 | Profile Management | 사용자 프로필 |
+| JongDuckk | Database & Config | DB 설정, 문서화 | External API | OpenAI 연동 |
+| a53624926-droid | Feature Development | 도서 기능, 서비스 통합 |
+| JYS | Domain Architecture | 도메인 설계 |
+| 지예환 | UI Components | MUI, 핵심 컴포넌트 |
+| Chang-Daegyu | Feature & UI | 인증 페이지, 레이아웃 |
+| Jeonyg | UI/UX | 사용자 경험 |
